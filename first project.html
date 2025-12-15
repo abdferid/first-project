@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markup Agency - Veb saytların hazırlanması və Brendinq</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .service-card:hover .icon-box { background-color: #2563EB; color: white; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-bold text-2xl text-blue-600">Markup.az</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 font-medium">Ana Səhifə</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 font-medium">Xidmətlər</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-blue-600 font-medium">Portfolio</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium">Haqqımızda</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition font-medium">Əlaqə</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4">
+            <a href="#home" class="block py-2 text-gray-600">Ana Səhifə</a>
+            <a href="#services" class="block py-2 text-gray-600">Xidmətlər</a>
+            <a href="#portfolio" class="block py-2 text-gray-600">Portfolio</a>
+            <a href="#contact" class="block mt-4 py-2 px-4 bg-blue-600 text-white text-center rounded">Əlaqə</a>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 bg-gradient-to-br from-white to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-blue-600 font-semibold tracking-wide uppercase text-sm">Rəqəmsal Agentlik</span>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mt-4 mb-6">
+                        Cəmi 15 gün ərzində <br> <span class="text-blue-600">Tam Funksional Veb Sayt</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Komandamız sizə rəqəmsal marketinq, SEO, SEM, SMM və məzmun istehsalı üzrə peşəkar xidmət təklif edir. Brendinizin uğuru bizim uğurumuzdur.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="px-8 py-3.5 rounded-lg bg-blue-600 text-white font-semibold shadow-lg hover:bg-blue-700 hover:-translate-y-1 transition transform text-center">
+                            Layihəyə Başla
+                        </a>
+                        <a href="#portfolio" class="px-8 py-3.5 rounded-lg border border-gray-300 bg-white text-gray-700 font-semibold hover:bg-gray-50 transition text-center">
+                            İşlərimizə Bax
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Team working" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl hidden md:block">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-green-100 p-2 rounded-full text-green-600">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500">Uğurlu Layihə</p>
+                                <p class="font-bold text-gray-900">150+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-3xl md:text-4xl font-bold text-blue-400">100+</p>
+                <p class="text-sm text-gray-400 mt-2">Məmnun Müştəri</p>
+            </div>
+            <div>
+                <p class="text-3xl md:text-4xl font-bold text-blue-400">150+</p>
+                <p class="text-sm text-gray-400 mt-2">Təhvil Verilmiş Layihə</p>
+            </div>
+            <div>
+                <p class="text-3xl md:text-4xl font-bold text-blue-400">15+</p>
+                <p class="text-sm text-gray-400 mt-2">Tərəfdaş</p>
+            </div>
+            <div>
+                <p class="text-3xl md:text-4xl font-bold text-blue-400">24/7</p>
+                <p class="text-sm text-gray-400 mt-2">Texniki Dəstək</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Təkliflərimiz Nələrdir?</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Sizin rəqəmsal ehtiyaclarınız üçün hərtərəfli həllər təklif edirik.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card p-8 rounded-2xl bg-white border border-gray-100 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="icon-box w-14 h-14 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 transition duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Veb Saytların Hazırlanması</h3>
+                    <p class="text-gray-600 leading-relaxed">Rəqəmsal dünyada şirkətinizi təqdim edən, tam funksional və sürətli saytlar.</p>
+                </div>
+
+                <div class="service-card p-8 rounded-2xl bg-white border border-gray-100 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="icon-box w-14 h-14 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 transition duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">UI-UX Dizayn</h3>
+                    <p class="text-gray-600 leading-relaxed">İstifadəçi rahatlığı və müasir interfeys həlləri ilə müştəri məmnuniyyətini artırın.</p>
+                </div>
+
+                <div class="service-card p-8 rounded-2xl bg-white border border-gray-100 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="icon-box w-14 h-14 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 transition duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Rəqəmsal Marketinq</h3>
+                    <p class="text-gray-600 leading-relaxed">Şirkətlərə müştərilərə çatmaq və diqqət cəlb etmək üçün effektiv strategiyalar.</p>
+                </div>
+
+                 <div class="service-card p-8 rounded-2xl bg-white border border-gray-100 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="icon-box w-14 h-14 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 transition duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Brendinq Xidməti</h3>
+                    <p class="text-gray-600 leading-relaxed">Brendinq və brendbook xidmətləri ilə marka loyallığını inkişaf etdirin.</p>
+                </div>
+
+                <div class="service-card p-8 rounded-2xl bg-white border border-gray-100 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="icon-box w-14 h-14 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 transition duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">SMM Xidməti</h3>
+                    <p class="text-gray-600 leading-relaxed">Sosial mediada güclü varlıq yaradaraq satışlarınızı yüksəldin.</p>
+                </div>
+
+                <div class="service-card p-8 rounded-2xl bg-white border border-gray-100 shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="icon-box w-14 h-14 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 transition duration-300">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">ERP və CRM Sistemləri</h3>
+                    <p class="text-gray-600 leading-relaxed">Biznes proseslərini optimallaşdırmaq üçün fərdi proqram təminatı.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900">Son Layihələrimiz</h2>
+                    <p class="mt-4 text-gray-600">Müştərilərimiz üçün yaratdığımız uğurlu həllər.</p>
+                </div>
+                <a href="#" class="mt-4 md:mt-0 text-blue-600 font-semibold hover:text-blue-700 flex items-center">
+                    Bütün Layihələr 
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                    <img src="https://placehold.co/600x400/e2e8f0/1e293b?text=TAN+Inshaat" alt="TAN İnşaat" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-bold">TAN İnşaat</h3>
+                            <p class="text-sm mt-2">Veb Sayt</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                    <img src="https://placehold.co/600x400/e2e8f0/1e293b?text=Duaks+Mobile" alt="Duaks" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-bold">Duaks Aksessuarları</h3>
+                            <p class="text-sm mt-2">E-ticarət</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer">
+                    <img src="https://placehold.co/600x400/e2e8f0/1e293b?text=Parilti+MMC" alt="Parilti MMC" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-bold">Parıltı MMC</h3>
+                            <p class="text-sm mt-2">Korporativ Sayt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-blue-600 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-10 text-white flex flex-col justify-center">
+                        <h2 class="text-3xl font-bold mb-6">Layihənizi Müzakirə Edək</h2>
+                        <p class="mb-8 text-blue-100">Bizimlə əlaqə saxlayın, komandamız sizə ən qısa zamanda geri dönüş etsin.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 mr-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                <span>Bakı ş., Nərimanov ray. Əhməd Rəcəbli küç. 33</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 mr-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                <span>+994 70 250 10 04</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 mr-4 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                <span>office@markup.az</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-10">
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Adınız</label>
+                                <input type="text" class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Ad və Soyad">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Telefon</label>
+                                <input type="text" class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="+994">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Xidmət Seçin</label>
+                                <select class="mt-1 block w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                    <option>Veb Sayt</option>
+                                    <option>SMM</option>
+                                    <option>Brendinq</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition">Göndər</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <span class="text-2xl font-bold text-white block mb-4">Markup.az</span>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="hover:text-white transition">Instagram</a>
+                <a href="#" class="hover:text-white transition">Facebook</a>
+                <a href="#" class="hover:text-white transition">Linkedin</a>
+            </div>
+            <p>&copy; 2024 Markup Agency. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
